@@ -1,13 +1,14 @@
-import { DashboardProvider } from "@/components/layout/dashboard-provider";
+import { DashboardProvider } from "@/components/layout/dashboard-provider"
+import { DashboardShell } from "@/components/layout/dashboard-shell"
 
 export default function DashboardLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <DashboardProvider>
-      <div>{children}</div>
+      <DashboardShell>{children}</DashboardShell>
     </DashboardProvider>
-  );
+  )
 }
